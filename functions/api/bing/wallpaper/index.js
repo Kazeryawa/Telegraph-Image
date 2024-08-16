@@ -8,7 +8,7 @@ export async function onRequest(context) {
       next, // used for middleware or to fetch assets
       data, // arbitrary space for passing data between middlewares
     } = context;
-    const res = await fetch(`https://t.alcy.cc/ycy/`);
+    const res = await fetch(`https://t.alcy.cc/ycy?json`);
     const bing_data = await res.json();
     const return_data={
         "status":true,
